@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+    <div class="all">
+        <h1>Generate a</h1>
+        <h1 style="color: green;"><u>Random Password and Save it.</u></h1>
+        <div class="input-container">
+            <input type="text" placeholder="Password" id="area">
+            <button class="image" id="copy" onclick="copy()"><img src="images (5).png" alt="copy icon"></button>
+        </div>
+
+        <div class="button-container">
+            <button id="generate" onclick="generate()">Generate Password</button>
+            <button class="save" onclick="showMessage()">Save</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div id="message-container">
+        <div class="form">
+            <h1 class="h1form">Saving Details</h1>
+        </div>
+        <div class="firstPart">
+            <div class="firstname">
+                <label>Title</label>
+                <input type="text" placeholder="title" class="name" id="fname" required>
+            </div>
+            <div class="last">
+                <label>File Name</label>
+                <input type="text" placeholder="Save as" class="name" id="lname" required>
+            </div>
+        </div>
+
+        <div class="secondPart">
+            <label class="email">Email Address</label>
+            <input type="email" placeholder="Email Address" id="email" required>
+            <label>Used For</label>
+            <input type="text" placeholder="For Example: Facebook" id="use">
+            <button class="closeButton" onclick="save()">Save</button>
+        </div>
+
+        <!-- <button class="closeButton" onclick="save()">Save</button> -->
+    </div>
+
+    <script src="pass.js"></script>
+</body>
+</html>
